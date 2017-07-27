@@ -95,9 +95,8 @@ html, body{
 }
 .pics_parallax1{
 	position: relative;
-	padding-top: 100px;
 	z-index: 2;
-	display: inline;
+
 }
 
 }
