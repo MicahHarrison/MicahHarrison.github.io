@@ -71,19 +71,27 @@ html, body{
 	padding: 10px 20px;
 	border-radius: 9px;
 	transition: all 0.5s;
+	position: relative;
+	z-index: 2;
 }
 
 .btn:hover{
 	color: #cbdfd6;
 	border: solid #cbdfd6;
 }
-.top{
-	background-color: blue;
-}
 .parallax-window {
     height: 100%;
+    width: 100%;
     background: transparent;
-    padding: 10px;
+    padding: 1px;
+    margin: 0px;
+    
+}
+.parallax-window h4{
+	z-index: 2;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 250%;
 }
 .post {
 	max-width: 40%;
@@ -92,19 +100,68 @@ html, body{
 	padding-bottom: 2%;
 	z-index: 2;
 	position: relative;
+	font-size: 150%;
+
 }
 .pics_parallax1{
 	position: relative;
+	padding-right: 20%;
+	padding-bottom: 2%;
+	padding-top: 2%;
 	z-index: 2;
+	height: 275px;
 
 }
-
-}
-h4{
+.post2 {
+	max-width: 40%;
+	padding-right: 2.5%;
+	text-align: center;
+	padding-bottom: 2%;
 	z-index: 2;
 	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 200%
+	color: white;
+	font-size: 150%;
+}
+.pics_parallax2{
+	position: relative;
+	padding-left: 20%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	z-index: 2;
+	height: 250px;
+
+}
+.post3 {
+	max-width: 40%;
+	padding-right: 2.5%;
+	text-align: center;
+	padding-bottom: 2%;
+	z-index: 2;
+	position: relative;
+	color: black;
+	font-weight: 300;
+}
+.pics_parallax3{
+	position: relative;
+	padding-left: 20%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	z-index: 2;
+
+}
+.post4 {
+	max-width: 40%;
+	padding-right: 2.5%;
+	text-align: center;
+	padding-bottom: 2%;
+	z-index: 2;
+	position: relative;
+	color: black;
+	font-weight: 300;
+}
+.pics_parallax4{
+	z-index: 2;
+
 }
 .hidden{
      opacity:0;
@@ -133,13 +190,13 @@ h4{
 		padding: 9px 17px;
 	}
 	.intro .inner{
-	max-width: 380px;
-	height: 500px;
+        max-width: 380px;
+        height: 500px;
 	}
 	.prof-pic {
-	border-radius: 50%;
-	height: 170px;
-	width: 170px;
+        border-radius: 50%;
+        height: 170px;
+        width: 170px;
 	}
 }
 @media screen and (max-width: 768px) {
