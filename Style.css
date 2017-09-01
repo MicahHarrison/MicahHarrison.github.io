@@ -168,6 +168,7 @@ html, body{
 	z-index: 2;
 	position: relative;
 	font-size: 125%;
+    color: white;
 
 }
 .pics_parallax4{
@@ -185,6 +186,21 @@ html, body{
 .visible{
      opacity:1;
 }
+.social-icons {
+	font-size: 150px;
+	z-index: 2;
+	position: relative;
+	padding-top: 5%;
+	padding-right: 15%;
+	padding-bottom: 13%
+
+}
+
+.social-icons a{
+	color: white;
+}
+
+
 
 
 /*--- Media Queries --*/
