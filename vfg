@@ -1,0 +1,82 @@
+
+		<script>
+		jQuery(document).ready(function() {
+	    jQuery('.post').addClass("hidden").viewportChecker({
+	        classToAdd: 'visible animated slideInLeft',
+	        offset: 100
+	       });
+		});
+		</script>
+		<script>
+		jQuery(document).ready(function() {
+		    jQuery('.pics_parallax1').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated fadeIn',
+		        offset: 100
+		       });
+			});
+		</script>
+		<script>
+		jQuery(document).ready(function() {
+	    jQuery('.post2').addClass("hidden").viewportChecker({
+	        classToAdd: 'visible animated zoomInDown',
+	        offset: 100
+	       });
+		});
+		</script>
+        <script>
+		jQuery(document).ready(function() {
+	    jQuery('.post2list').addClass("hidden").viewportChecker({
+	        classToAdd: 'visible animated zoomInDown',
+	        offset: 100
+	       });
+		});
+		</script>
+		<script>
+		jQuery(document).ready(function() {
+		    jQuery('.pics_parallax2').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated rotateInDownLeft',
+		        offset: 100
+		       });
+			});
+		</script>
+		<script>
+		jQuery(document).ready(function() {
+	    jQuery('.post3').addClass("hidden").viewportChecker({
+	        classToAdd: 'visible animated flipInY',
+	        offset: 100
+	       });
+		});
+		</script>
+		<script>
+		jQuery(document).ready(function() {
+		    jQuery('.pics_parallax3').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated bounceInLeft',
+		        offset: 100
+		       });
+			});
+		</script>
+    <script>
+		jQuery(document).ready(function() {
+	    jQuery('.post4').addClass("hidden").viewportChecker({
+	        classToAdd: 'visible animated zoomInDown',
+	        offset: 100
+	       });
+		});
+		</script>
+    <script>
+		jQuery(document).ready(function() {
+		    jQuery('.pics_parallax4').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated bounceInLeft',
+		        offset: 100
+		       });
+			});
+		</script>
+<script>
+		jQuery(document).ready(function() {
+		    jQuery('.social-icons').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated bounceInLeft',
+		        offset: 100
+		       });
+			});
+		</script>
+</body>
