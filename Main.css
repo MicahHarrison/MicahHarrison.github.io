@@ -25,7 +25,7 @@ body {
   padding-top: 10%;
   z-index: 2;
   position: relative;
-  transition: all .5s;
+  transition: all 1s;
   display: block;
 }
 .content h2 {
@@ -108,7 +108,7 @@ body {
   color: white;
   margin-top: 13.3%;
   z-index: 2;
-  height: 742.4px;
+  height: 100%;
   width: 100%;
   background: url('img/first.jpg') no-repeat 50% 50%;
   background-size: cover;
@@ -132,6 +132,7 @@ h5 {
   padding-top: 45%;
   padding-bottom: 2%;
   margin: 0 auto;
+  font-size: 300%;
   position: relative;
 }
 .container1 {
@@ -152,6 +153,10 @@ h5 {
   height: 300px;
   width: 300px;
   padding-left: 10%;
+}
+.temp {
+  float: left; 
+  margin-top: 10%;
 }
 
 .second {
@@ -258,8 +263,8 @@ h5 {
 
 #About{
   padding: 0px;
-  margin: 0 auto;
-  height: 742.4px; 
+  margin-top: 200px; 
+  height: 100%; 
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -297,6 +302,9 @@ h5 {
   }
 }
 @media screen and (max-width: 768px){
+  .fadein img {
+    height: 100%;
+  }
   .post {
     font-size: 100%;
   }
@@ -318,8 +326,15 @@ h5 {
   .links {
     padding: 2px;
   }
+  h5 {
+  font-size: 100%;
+  padding-top: 80%;
+  }
 }
 @media screen and (max-width: 515px){
+  .fadein img {
+    height: 100%;
+  }
  .post {
     font-size: 80%;
   }
@@ -327,21 +342,28 @@ h5 {
     padding: 0px 0px;
     font-size: 75%;
   }
-  .fadein img {
-    height: 55%;
-  }
   .links {
     padding: 0px;
   }
   .content{
+    padding-top: 40%;
     font-size: 75%;
   }
   .prof-pic {
-    border-radius: 50%;
-    height: 100px;
+    border-radius: 0%;
+    height: 150px;
     width: 100px;
   }
   .links {
-    padding: 5px;
+    padding: 5px
   }
-}
+  #About {
+    margin-top: 218px;
+  }
+  .temp {
+    margin-top: 70%;
+  }
+  h5 {
+  font-size: 100%;
+  padding-top: 195%;
+  }
