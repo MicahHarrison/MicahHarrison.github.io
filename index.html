@@ -1,146 +1,147 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-	<title>Micah Harrison</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/Main.css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<link href="css/animate.css" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link href="css/waypoints.css" rel="stylesheet"/>
-	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
-	<script src="js/waypoints.js" type="text/javascript"></script>
-	<script src="assets/viewportchecker.js"></script>
-	<script>
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links
-	  $("a").on('click', function(event) {
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Shrikhand|Prompt|ABeeZee" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Main.css">
+  <!--Animations-->
+  <link href="css/animate.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--Contact logos--> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+      $(window).scroll(function () {
+          //if you hard code, then use console
+          //.log to determine when you want the 
+          //nav bar to stick.  
+          console.log($(window).scrollTop())
+        if ($(window).scrollTop() > 20) {
+          $('#nav_bar').addClass('navbar-fixed');
+        }
+        if ($(window).scrollTop() < 21) {
+          $('#nav_bar').removeClass('navbar-fixed');
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-	    // Make sure this.hash has a value before overriding default behavior
-	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
-	      event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-	      // Store hash
-	      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 800, function(){
-	   
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	      });
-	    } // End if
-	  });
-	});
-	</script>
-	
-	<script src="parallax.min.js"></script>
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
 
-	<style type="text/css">
-	#About-me{
-    height: 100%; 
-	}
-	#Schooling{
-    height: 100%; 
-	}
-	#WorkExperience{
-    height: 100%; 
-	}
-	</style>
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+    <script type="text/javascript">
+    $(function() {
+    $('.fadein img:gt(0)').hide();
+
+    setInterval(function () {
+        $('.fadein :first-child').fadeOut()
+                                 .next('img')
+                                 .fadeIn()
+                                 .end()
+                                 .appendTo('.fadein');
+                                 
+    }, 6000); // 5 seconds
+    });
+    </script>
 </head>
-<body>
 <div id="Intro"><a href="#Intro"></a></div>
-	<section class="intro">
-			<div class="inner">
-				<div class="content">
-					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-						<h1> Hello, World! </h1>
-					</section>
-					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".1s">
-						<img src="img/portrait.jpg" class="prof-pic">
-						<h2>Micah Harrison</h2>
-						<h3> Student at UC Berkeley | Computer Science Major </h3>
-					<section class="os-animation" data-os-anim
-					ation="bounceInUp" data-os-animation-delay=".2s">
-						<a class= "btn" href="#About-me"> Get To Know Me</a>
-					</section>
-				</div>
-            </div>
-		</section>
-
-	    <div id="About-me"><a href="#About-me">
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/room_img.jpg"></a>
-			<h4 class="post">About Me</h4>
-        <img src="img/Grad1.jpg" class="pics_parallax1" align="right">
-			<p class="post">My name is Micah Harrison and I am a 18 year old intended Computer Science major at the University of California, Berkeley.
-				I grew up in the beautiful Pomona, California where I graduated from Garey High School in 2016. While in high school, I was always interested
-				the hardware of gaming consoles and, after learning the functions of each part of a console, I actually got paid by some of my friends to repair their systems.
-				Not knowing anything about the software side of Computer Science, I took a small web development course during my senior
-				year of high school and the idea of being able to create incredible projects at the tip of your fingers led me to choose Computer Science as my major.
-                A year and a half later and I am now a sophomore at Berkeley.</p>
-            <img src="img/Grad.jpg" class="pics_parallax1" align="right">
-			<p class="post">In my free time I enjoy hiking with my golden labrador, Ellie, or playing video games with friends. I also enjoy coding for fun and being a nerd.</p>
-
-			<a class= "btn" href="#Schooling"> CS Experience </a>
-			</div>
-			</div>
-		</div>
-        <div id="Schooling"><a href="#Schooling">
-            <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/education2_img.jpg"></a>
-            <div class="About_me" align="right">
-                <h4 class="post2">CS Experience</h4>
-                <img src="img/actualcode.jpg" class="pics_parallax2" align="left">
-                <p class="post2">I currently do not have much "in the field" CS experience, and I am hoping that is where you come in, but since starting my education at Berkeley, I have
-                    become proficient in coding in Python and Scheme and I am currently learning Java. I am comfortable working with various data types and I am eager to learn as
-                    much as I can to become a useful asset in the world of CS. In my spare time, I do try to work on little projects such as this very website.
-                </p>
-                <h4 class="post2">Key Skills</h4>
-                <ul class="post2list">
-                    <li>Ability to work under pressure, adapt to change, and deal with difficult situations. </li>
-                    <li>Keen resource management skills.</li>
-                    <li>Able to build positive working relationships that helps everyone achieve their goals and business objectives.</li>
-                    <li>Confident in my own abilities and am able to instill confidence in others that they might take on and complete rigorous challenges professionally.</li>
-                    <li>Proactive team player who is able to rally up teammates to achieve meaningful contributions to a businesses success.</li>
-                </ul>
-                <a class= "btn" href="#WorkExperience"> Work Experience </a>
-            </div>
-        </div>
-        <div id="WorkExperience"><a href="#WorkExperience">
-            <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/work3.jpg"></a>
-            <div class="About_me" align="right">
-                <h4 class="post3">Work Expirience</h4>
-                <img src="img/bestjob.jpg" class="pics_parallax3" align="left">
-                <p class="post3"><b>Summer of 2015:</b> Superior: Electrical Mechanical and Plumbing:
-                    At this company, I work as a Jr. Project manager. My responsibilities included organizing time and material sheets for proper billing, acting as a head of a diverse group of electricians, and completing and presenting bills of sales to customers in order to finalize transactions.
-                </p>
-                <p class="post3"><b>Summer of 2016 and 2017:</b> Raging Waters
-                    At Raging Waters I operated in the Admissions department as a Cashier/ Guest Services. As a Cashier, I would handle large amounts of money while selling tickets to be admitted into the water park. Guest Services allowed me to help and handle customers that have any comments, complaints, or concerns. Whether they just needed a map of the park or they were unhappy with their visit, I would work to the best of my ability to fulfill their requests.(Picture on the left is Admissions department moments away from victory in volleyball)
-                </p>
-                <p class="post3"><b>August 2016 - Present:</b> Clark Kerr Housing Assistant
-                    While working at Clark Kerr Unit for UC Berkeley, I managed the mailroom, front office, and Assistant Student Learning Center. I utilized organizational skills in the mailroom sorting mail appropriately so that it ran smoothly and my customer service background helped me to handle students with any issues they may have with their living quarters at the front desk. In the ASC, I helped students with any issues using University computers or printers.
-                </p></div>
-            <a class= "btn" href="#SocialMedia"> Didn't get Enough? </a>
-        </div>
+  <div class = "intro">
+    <nav id = 'nav_bar'>
+      <ul class = 'nav_links'>
+        <li><a href = "#Intro" class = "links">Home</a></li>
+        <li><a href = "#About" class = "links">About Me</a></li>
+        <li><a href = "#Portfolio" class = "links">Portfolio</a></li>
+        <li><a href = "./Micah's Resume.pdf" class = "links" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section class="animated bounceInUp">
+        <h1> Hello, World! </h1>
+      </section>
+      <section class="animated bounceInUp">
+        <h2>Micah Harrison</h2>
+        <h3> Student at UC Berkeley | Computer Science Major </h3>
+        <ul class = 'nav_links'>
+        <li align= "center"><a href = "https://www.facebook.com/micah.harrison.98" class = "links" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href = "https://github.com/MicahHarrison" class = "links" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        <li><a href = "https://www.linkedin.com/in/micah-harrison-6669ba140/" class = "links" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><div class = "email"> | Micah.harrison08@gmail.com </div></li>
+      </ul>
+      </section>
+  </div>
+    <div class = 'fadein'>
+      <img src = "img/sky.jpg">
+      <img src = "img/comp.jpg">
+      <img src = "img/mount.jpg">
+      <img src = "img/bridge.jpg">
+    </div><div class = "first">
+  <div id = "About">
+    <h4 align="center" href = "#About">About Me</h4>
+    <div class= "container1">
+    <p style="float: left; margin-top: 10%;"><img src="img/me.jpg" class = "prof-pic"></p>
+    <p class = "post">
+    Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+    Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <h5 align="center"></h5>
+  </div>
+</div>
+<div class = "second" >
+  <div id = "Portfolio">
+    <h5 align="center" href = "#Portfolio">PORTFOLIO</h5>
+    <div style="width: 100%;">
+    <ul class = "names">
+        <li> Website </li>
+        <li> Interpreter </li>
+        <li> Database </li>
+        <li> Gitlet </li>
+      </ul>
     </div>
-    <div id="SocialMedia"><a href="#SocialMedia">
-        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/social_img.jpg"></a>
-        <div class="Social" align="left">
-            <h4 class="post4">Social Media</h4>
-            <p class="post4">If you didn't get enough of me, check me out on some of social and professional media.</p>
-        </div>
-        <a class= "btn" href="#Intro"> Again, from the top! </a>
-        <div class="social-icons" align="right">
-            <a href= "https://www.facebook.com/micah.harrison.98" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            <a href= "https://twitter.com/BirdPerson08" target="_blank"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href= "https://www.linkedin.com/in/micah-harrison-6669ba140/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href= "https://github.com/MicahHarrison" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i></a>
-        </div>
+    <ul class = "pics">
+      <li><img src="img/website.jpg" class = "port-pic"></li>
+      <li><img src="img/scheme.jpg" class = "port-pic"></li>
+      <li><img src="img/database.JPG" class = "port-pic"></li>
+      <li><img src="img/gitlet.jpg" class = "port-pic"></li>
+    </ul>
+    <div style="width: 100%;">
+    <ul class = "text">
+        <li><p>
+          The website you are currently on was 100% made by me. I do not have any formal training in website developement but through constantly updating this website (this is the third iteration) and developing web applications, I feel that I have improved greatly. This website is primarily built in html and css with some javascript for smooth scrolling and image rotation.
+            </p></li>
+        <li><p>
+          For this project, I developed an interpreter for a subset of the Scheme language. This is possible through a read-eval-print loop that is, the interpreter reads Scheme expressions, evaluates them, and displays the results. I also implemented a procedure that converts special forms of the language into the core language before a program is passed to the interpreter.
+            </p></li>
+        <li><p>
+          This project involved writing a miniature relational database management system (DBMS) that stores tables of data, where a table consists of some number of labeled columns of information. My system includes a very simple query language for extracting information from these tables.
+            </p></li>
+        <li><p>
+          In this project I implemented a version-control system that mimics some of the basic features of the popular version-control system Git. A version-control system is essentially a backup system for related collections of files.
+            </p></li>
+      </ul>
     </div>
-    </div>
+  </div>
+</div>
 </body>
+</html>
