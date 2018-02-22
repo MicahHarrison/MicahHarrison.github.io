@@ -6,9 +6,11 @@ html, body{
   height: 100%;
   width: 100%;
 }
+
 body {
   clear: both;
 }
+
 .intro {
   height: 100%;
   width: 100%;
@@ -19,18 +21,25 @@ body {
 
 .content {
   font-size: 140%;
-  max-width: 650px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 13%;
   z-index: 2;
   position: relative;
   transition: all 1s;
-  display: block;
+  height: 100%;
+  background:rgba(25,25,25,0.3);
 }
 .content h2 {
   font-size: 300%;
   letter-spacing: 10px;
+  color: #f7fcf3;
+  font-family: 'Prompt', sans-serif;
+}
+.content h3 {
+  font-size: 90%;
+  color: #f7fcf3;
   font-family: 'Prompt', sans-serif;
 }
 
@@ -42,21 +51,18 @@ body {
   height: 100%;
   width: 100%;
 }
-.fadein {
-  clear: both;
-}
 
 .scroll-down {
   opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
+  -webkit-transition: all 1s ease-in 3s;
+  transition: all 1s ease-in 3s;
 }
 
 .navbar-fixed {
   top: 0;
   z-index: 100;
   position: fixed;
-  width: auto;
+  width: 100%;
   transition: all .3s;
 }
 
@@ -66,55 +72,103 @@ body {
   z-index: 100;
   border-radius: 0px;
   margin-bottom: 0;
-  height: 50px;
+  height: 0px;
 }
 
 .nav_links {
-  list-style-type: none;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 145%;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 9px;
   transition: all 0.5s;
   position: relative;
   z-index: 100;
+  color: black;
 }
 
 .nav_links li {
   float: left;
   padding: 10px;
+  color: black;
+  background:rgba(255,255,255,1);
+  width: 25%;
+  text-align: center;
 }
-.email{
-  padding: 1px;
-  font-size: 56%;
-  font-weight: bold;
+.no_links {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 35%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 145%;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 100;
+  color: black;
 }
-.links {
+
+.no_links li {
+  color: #f7fcf3;
+  width: 5%;
+  float: left;
   padding: 10px;
   color: black;
-  text-decoration: none;
-  border-radius: 5px;
+  text-align: center;
 }
-.links:hover{
+
+.email{
+  color: #f7fcf3;
+  padding: 1px;
+  font-size: 56%;
+  font-family: 'Prompt', sans-serif;
+}
+.links {
+  display: block;
+  font-weight: 20;
+  color: black;
+  text-decoration: none;
+}
+.nav_links li:hover {
   transition: all 0.5s;
+  padding: 15px;
+  color: black;
+  background:rgba(200,200,200,1);
+  width: 25%;
+}
+.first-int {
   color: white;
-  background: black;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: white;
+  background:rgba(255,255,255,1);
+  position: relative;
+}
+.first-int h1 {
+  font-family: 'Prompt', sans-serif;
+  font-size: 250%;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
 }
 .first {
   color: white;
-  margin-top: 13.3%;
   z-index: 2;
   height: 100%;
   width: 100%;
   background: url('img/first.jpg') no-repeat 50% 50%;
   background-size: cover;
+  position: relative;
 }
+
 h4 {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Prompt', sans-serif;
   border-bottom: solid;
   border-bottom-color: #1ae3de;
   width: 30%;
@@ -125,21 +179,21 @@ h4 {
   margin: 0 auto;
 }
 h5 {
-  border-bottom: solid;
-  border-bottom-color: #1ae3de;
   width: 30%;
   margin-top: 0%;
   padding-top: 45%;
   padding-bottom: 2%;
   margin: 0 auto;
-  font-size: 300%;
   position: relative;
+}
+.container2 {
+  height: 70%;
 }
 .container1 {
   height: 70%;
 }
 .second h5 {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Prompt', sans-serif;
   margin-top: 0%;
   padding-top: 2.5%;
   padding-bottom: 1%;
@@ -149,24 +203,24 @@ h5 {
   border-color: black;
 }
 .prof-pic {
-  transition: all .5s;
   height: 300px;
   width: 300px;
-  padding-left: 10%;
+  border: solid;
+  border-width: 10px;
+  border-color: #fce6d7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 .temp {
-  float: left; 
-  margin-top: 10%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  margin: 0 auto;
+  align-content: center;
 }
 
-.second {
-  color: black;
-  z-index: 1;
-  height: 103%;
-  width: 100%;
-  background: url('img/second.jpg') no-repeat 50% 50%;
-  background-size: cover;
-}
+
 .pics {
   list-style-type: none;
 }
@@ -199,6 +253,17 @@ h5 {
   z-index: 999;
   height: 350px;
   width: 350px;
+}
+.prof-pic2 {
+  float: left;
+  position: relative;
+  z-index: 999;
+  border: solid;
+  border-width: 3px;
+  transition: all .5s;
+  height: 300px;
+  width: 300px;
+  transition: all 1s;
 }
 
 .names {
@@ -247,79 +312,201 @@ h5 {
 }
 
 .post {
+  background: rgba(80,80,80,0.7);
+  color: white;
   font-family: 'ABeeZee', sans-serif;
-  float: left;
-  margin-top: 5%;
   transition: all 0.5s;
-  padding-left: 40%;
-  padding-bottom: 2%;
-  padding-right: 5%;
-  width: auto;
-  text-align: left;
+  margin-left: 2%;
+  margin-right: 5%;
+  padding: 2%;
+  width: 65%;
+  text-align: center;
   position: absolute;
-  font-size: 160%;
-  overflow: visible;
+  font-size: 100%;
+  overflow: auto;
 }
+.post2 {
+background: rgba(255,255,255,0.7);
+    color: black;
+    font-family: 'ABeeZee', sans-serif;
+    transition: all 0.5s;
+    margin-left: 23%;
+    margin-right: 5%;
+    margin-top: -15px;
+    padding: 2%;
+    width: 47%;
+    text-decoration: underline;
+    position: absolute;
+    font-size: 150%;
+    overflow: auto;
+}
+h6 {
+    font-size: 300%;
+    color: black;
+    margin: 1%;
+    font-family: 'Prompt', sans-serif;
+}
+#About-int{
+  text-align: center;
+  height: 33%; 
+  padding: 4% 7%;
+  padding-bottom: 10%;
+}
+#tab1{
+  height: 05%; 
+  padding: 5% 6%;
+  padding-bottom: 35%;
+  background: #fd9;
+} 
 
 #About{
   padding: 0px;
-  margin-top: 200px; 
   height: 100%; 
   padding-left: 15%;
   padding-right: 15%;
 }
 
 #Portfolio{
-  padding-top: 3%; 
+  padding-top: 0%; 
 }
-#Contact{
-  padding: 0px;
-  margin: 5%;
-  height: 742.4px; 
+
+
+/*
+ CSS for the main interaction
+*/
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
 }
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 5px solid black;
+  border-bottom-color: #fd9; 
+  background: #fd9;
+  border-bottom: 0;
+  cursor: pointer;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 600;
+  font-size: 200%
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  font-family: 'Inconsolata', sans-serif;
+  background: white;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: white;
+  transition: all 1s;
+  font-family: 'Inconsolata', sans-serif;
+
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  color: black;
+  background: black;
+  font-family: 'Inconsolata', sans-serif;
+  transition: all 1s;
+}
+
+.tabset > input:checked + label {
+  border-color: #f4b042;
+  border-bottom: 1px solid #f4b042;
+  margin-bottom: -1px;
+  font-family: 'Inconsolata', sans-serif;
+
+}
+
+
+.tab-panel {
+  border: 5px solid #f4b042;
+  border-bottom: 0px;
+  font-family: 'Inconsolata', sans-serif;
+
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.tabset {
+  max-width: 80em;
+  padding-left: 5%;
+}
+
+.encapsulate {
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  background: url('img/new.png') no-repeat 50% 50%;
+
+}
+
+
 
 /*--- Media Queries --*/
 @media screen and (max-width: 900px){
   .post {
     font-size: 110%;
   }
-  .fadein img {
-    height: 90%;
-  }
-  .nav_links {
-    padding: 7px 12px;
-    font-size: 135%;
-  }
+
   .content{
     padding-top: 20%;
     font-size: 125%;
   }
 
   .prof-pic {
-    border-radius: 50%;
     height: 250px;
     width: 250px;
   }
 }
 @media screen and (max-width: 768px){
-  .fadein img {
-    height: 100%;
-  }
   .post {
     font-size: 100%;
   }
-  .nav_links {
-    padding: 5px 0px;
-    font-size: 115%;
-  }
-  .fadein img {
-    height: 75%;
-  }
+
   .content{
     font-size: 100%;
   }
   .prof-pic {
-    border-radius: 50%;
     height: 200px;
     width: 200px;
   }
@@ -330,11 +517,25 @@ h5 {
   font-size: 100%;
   padding-top: 80%;
   }
+  .port-pic {
+  position: relative;
+  z-index: 999;
+  border: solid;
+  border-width: 3px;
+  transition: all .5s;
+  height: 100px;
+  width: 100px;
+  transition: all 1s;
+  }
+
+  .port-pic:hover {
+  height: auto;
+  z-index: 999;
+  height: 150px;
+  width: 150px;
+  }
 }
 @media screen and (max-width: 515px){
-  .fadein img {
-    height: 100%;
-  }
  .post {
     font-size: 80%;
   }
@@ -356,9 +557,6 @@ h5 {
   }
   .links {
     padding: 5px
-  }
-  #About {
-    margin-top: 76px;
   }
   .temp {
     margin-top: 70%;

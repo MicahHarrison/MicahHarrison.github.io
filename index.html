@@ -5,6 +5,8 @@
   <meta name = "viewport" content="width=device-width initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Shrikhand|Prompt|ABeeZee" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="Main.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <!--Animations-->
   <link href="css/animate.css" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -44,7 +46,7 @@
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 800, function(){
+          }, 1300, function(){
 
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
@@ -64,8 +66,13 @@
                                  .end()
                                  .appendTo('.fadein');
                                  
-    }, 6000); // 5 seconds
+    }, 7000); // 7 seconds
     });
+    </script>
+    <script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
     </script>
 </head>
 <div id="Intro"><a href="#Intro"></a></div>
@@ -75,73 +82,98 @@
         <li><a href = "#Intro" class = "links">Home</a></li>
         <li><a href = "#About" class = "links">About Me</a></li>
         <li><a href = "#Portfolio" class = "links">Portfolio</a></li>
-        <li><a href = "./Micah's Resume.pdf" class = "links" target="_blank">Resume</a></li>
+        <li><a href = "./RESUME.docx.pdf" class = "links" target="_blank">Resume</a></li>
       </ul>
     </nav>
     <div class="content">
       <section class="animated bounceInUp">
-        <h1> Hello, World! </h1>
       </section>
       <section class="animated bounceInUp">
         <h2>Micah Harrison</h2>
         <h3> Student at UC Berkeley | Computer Science Major </h3>
-        <ul class = 'nav_links'>
-        <li align= "center"><a href = "https://www.facebook.com/micah.harrison.98" class = "links" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-        <li><a href = "https://github.com/MicahHarrison" class = "links" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        <li><a href = "https://www.linkedin.com/in/micah-harrison-6669ba140/" class = "links" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li><div class = "email"> | Micah.harrison08@gmail.com </div></li>
+        <ul class = 'no_links'>
+        <li align= "center"><a href = "https://www.facebook.com/micah.harrison.98" class = "links" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color:#f7fcf3;"></i></a></li>
+        <li><a href = "https://github.com/MicahHarrison" class = "links" target="_blank"><i class="fa fa-github-square" aria-hidden="true" style="color:#f7fcf3;"></i></a></li>
+        <li><a href = "https://www.linkedin.com/in/micah-harrison-6669ba140/" class = "links" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:#f7fcf3;"></i></a></li>
+        <li style="width: 30%;"><div class = "email" > | Micah.harrison08@gmail.com </div></li>
       </ul>
       </section>
   </div>
     <div class = 'fadein'>
-      <img src = "img/sky.jpg">
-      <img src = "img/comp.jpg">
       <img src = "img/mount.jpg">
       <img src = "img/bridge.jpg">
-    </div><div class = "first">
+      <img src = "img/sky.jpg">
+      <img src = "img/comp.jpg">
+    </div>
+    <div class = "first-int">
+  <div id = "About-int">
+    <h1 align="center">"The best thing about a boolean is even if you are wrong, you are only off by a bit." --(Anonymous)</h1>
+  </div>
+    <div class = "first">
   <div id = "About">
     <h4 align="center" href = "#About">About Me</h4>
     <div class= "container1">
     <p class="temp"><img src="img/me.jpg" class = "prof-pic"></p>
     <p class = "post">
     I am just your above average 19 year old Sophomore studying Computer Science at the University of California, Berkeley. I'm looking for my first internship and maybe you can help with that. I am proficient in many languages such as Java, Python, and C. I am also comfortable using Git Version Control, creating data structures, and working with databases. If you are looking for an eager, young, and skilled programmer to intern, then you have come to the right place.</p>
-    <h5 align="center"></h5>
+    
   </div>
 </div>
-<div class = "second" >
-  <div id = "Portfolio">
-    <h5 align="center" href = "#Portfolio">PORTFOLIO</h5>
-    <div style="width: 100%;">
-    <ul class = "names">
-        <li> Website </li>
-        <li> Interpreter </li>
-        <li> Database </li>
-        <li> Gitlet </li>
-      </ul>
-    </div>
-    <ul class = "pics">
-      <li><img src="img/website.JPG" class = "port-pic"></li>
-      <li><img src="img/scheme.jpg" class = "port-pic"></li>
-      <li><img src="img/database.JPG" class = "port-pic"></li>
-      <li><img src="img/gitlet.JPG" class = "port-pic"></li>
-    </ul>
-    <div style="width: 100%;">
-    <ul class = "text">
-        <li><p>
-          The website you are currently on was 100% made by me. I do not have any formal training in website developement but through constantly updating this website (this is the third iteration) and developing web applications, I feel that I have improved greatly. This website is primarily built in html and css with some javascript for smooth scrolling and image rotation.
-            </p></li>
-        <li><p>
-          For this project, I developed an interpreter for a subset of the Scheme language. This is possible through a read-eval-print loop that is, the interpreter reads Scheme expressions, evaluates them, and displays the results. I also implemented a procedure that converts special forms of the language into the core language before a program is passed to the interpreter.
-            </p></li>
-        <li><p>
-          This project involved writing a miniature relational database management system (DBMS) that stores tables of data, where a table consists of some number of labeled columns of information. My system includes a very simple query language for extracting information from these tables.
-            </p></li>
-        <li><p>
-          In this project I implemented a version-control system that mimics some of the basic features of the popular version-control system Git. A version-control system is essentially a backup system for related collections of files.
-            </p></li>
-      </ul>
-    </div>
-  </div>
 </div>
+
+<div id = "About-int">
+    <h1 align="center">"Don’t worry if it doesn’t work right. If everything did, you’d be out of a job." --(Mosher’s Law of Software Engineering)</h1>
+</div>
+    <div class="encapsulate">
+    <h6 align="center" id="Portfolio" href = "#Portfolio">PORTFOLIO</h6></a>
+<div class="tabset">
+<!-- Tab 1 -->
+<input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+<label for="tab1">MUD</label>
+<!-- Tab 2 -->
+<input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+<label for="tab2">Gitlet</label>
+<!-- Tab 3 -->
+<input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+<label for="tab3">DBMS</label>
+<!-- Tab 4 -->
+<input type="radio" name="tabset" id="tab4" aria-controls="dunkles2">
+<label for="tab4">Yelp Maps</label>
+
+<div class="tab-panels">
+  <section id="marzen" class="tab-panel">
+    <div id = "tab1">
+    <img src="img/MUD.jpg" class = "prof-pic2"></p>
+    <p class = "post2">
+    ● Coordinated with a team to create a web application that generates music playlist based on a user’s mood  ● Used HTML, CSS, and Javascript to create a front-end GUI for the application</p>
+    </div>
+  </section>
+  <section id="rauchbier" class="tab-panel">
+    <div id = "tab1">
+    <img src="img/gitlet.jpg" class = "prof-pic2"></p>
+    <p class = "post2">
+    C​onstructed and implemented a version-control system mimicking features after git  ● Features included initializing repo, pushing and pulling from local and remote repositories, and merging   ● Used Blob objects to record contents of files by preserving a sha1 encryption of the  contents of the file and  represented commits as special objects with hashmaps of the current Blobs(files)  in the commit. </p>
+    </div>
+  </section>
+  <section id="dunkles" class="tab-panel">
+    <div id = "tab1">
+    <img src="img/database.jpg" class = "prof-pic2"></p>
+    <p class = "post2">
+     Wrote a miniature relational database management system that stores tables of data  ● Stored table names in the db using a hashmap while the contents of the tables were written and read from special .db  files much like reading/writing from CSV files  ● System included a query language interpreter modeled after SQL</p>
+    </div>
+  </section>
+  <section id="dunkles2" class="tab-panel">
+    <div id = "tab1">
+    <img src="img/yelp.jpg" class = "prof-pic2"></p>
+    <p class = "post2">
+     ● C​reated a visualization of restaurant ratings using  machine learning and the Yelp academic database.  ● Implement a ​supervised​ learning algorithm that attempts to generalize ratings of a restaurant  from examples of  all  the restaurants that the user has already rated. </p>
+    </div>
+  </section>
+</div>
+
+</div>
+</div>
+
+
 </body>
 </html>
