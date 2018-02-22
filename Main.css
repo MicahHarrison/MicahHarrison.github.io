@@ -311,6 +311,7 @@ h6 {
   height: 05%; 
   padding: 5% 6%;
   padding-bottom: 35%;
+  padding-right: 30%;
   background: #fd9;
 } 
 
@@ -423,7 +424,7 @@ h6 {
 
 
 .tabset {
-  max-width: 80em;
+  width: 95%;
   padding-left: 5%;
 }
 
