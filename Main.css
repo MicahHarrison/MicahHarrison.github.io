@@ -91,6 +91,7 @@ body {
 }
 
 .nav_links li {
+  transition: all 0.5s;
   float: left;
   padding: 10px;
   color: black;
@@ -129,6 +130,7 @@ body {
   font-family: 'Prompt', sans-serif;
 }
 .links {
+  transition: all 0.5s;
   display: block;
   font-weight: 20;
   color: black;
