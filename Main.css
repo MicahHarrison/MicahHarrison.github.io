@@ -539,11 +539,17 @@ h6 {
   h4 {
     font-size: 170%;
   }
+  #About-int{
+  height: 25%; 
+  }
   h6 {
     font-size: 170%;
   }
   .tabset > label {
   font-size: 100%
+  }
+  .tabset > label::after {
+  width: 0px;
   }
   .post2 {
     margin-left: 0%;
