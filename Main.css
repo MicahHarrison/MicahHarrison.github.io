@@ -321,7 +321,7 @@ h6 {
 }
 
 #Portfolio{
-  padding-top: 0%; 
+
 }
 
 
@@ -498,7 +498,7 @@ h6 {
     font-size: 70%;
   }
   .links {
-    padding: 0px;
+    padding: 10px;
   }
   .content{
     padding-top: 40%;
@@ -537,12 +537,14 @@ h6 {
     padding-top: 195%;
   }
   h4 {
+    padding-top: 15%;
     font-size: 170%;
   }
   #About-int{
   height: 25%; 
   }
   h6 {
+    padding-top: 15%;
     font-size: 170%;
   }
   .tabset > label {
