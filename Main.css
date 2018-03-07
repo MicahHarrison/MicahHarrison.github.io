@@ -495,10 +495,14 @@ h6 {
   }
   .nav_links {
     padding: 0px 0px;
-    font-size: 70%;
+    font-size: 60%;
   }
   .links {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .links:hover {
+    padding-bottom: 10px;
   }
   .content{
     padding-top: 40%;
@@ -519,6 +523,12 @@ h6 {
   color: black;
   text-align: center;
   }
+  .first {
+    height: 110%
+  }
+  .encapsulate {
+  height: 120%;
+}
   .prof-pic {
     border-radius: 0%;
     height: 150px;
@@ -562,5 +572,5 @@ h6 {
     overflow: auto;
   }
   #tab1 {
-    padding-bottom: 145%;
+    padding-bottom: 190%;
   }
