@@ -177,7 +177,7 @@ h4 {
   border-bottom-color: #1ae3de;
   width: 30%;
   margin-top: 0%;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 2%;
   font-size: 300%;
   margin: 0 auto;
@@ -509,7 +509,7 @@ h6 {
   }
 
   .no_links li {
-    padding: 5%;
+    padding: 1%;
     text-align: center;
   }
   .first-int h1 {
