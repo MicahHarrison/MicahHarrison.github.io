@@ -277,6 +277,7 @@ h5 {
   position: absolute;
   font-size: 100%;
   overflow: auto;
+
 }
 .post2 {
   background: rgba(255,255,255,0.7);
@@ -527,7 +528,7 @@ h6 {
     height: 110%
   }
   .encapsulate {
-  height: 120%;
+  height: 140%;
 }
   .prof-pic {
     border-radius: 0%;
@@ -572,5 +573,5 @@ h6 {
     overflow: auto;
   }
   #tab1 {
-    padding-bottom: 190%;
+    padding-bottom: 130%;
   }
