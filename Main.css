@@ -531,11 +531,11 @@ h6 {
 }
   .prof-pic {
     border-radius: 0%;
-    height: 150px;
-    width: 100px;
+    height: 200px;
+    width: 150px;
   }
   .temp {
-    margin-top: 30%;
+    margin-top: 10%;
   }
   .prof-pic2 {
   float: none;
@@ -547,7 +547,7 @@ h6 {
     padding-top: 195%;
   }
   h4 {
-    padding-top: 15%;
+    padding-top: 25%;
     font-size: 170%;
   }
   #About-int{
