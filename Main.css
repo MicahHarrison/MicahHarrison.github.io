@@ -254,6 +254,7 @@ h5 {
   position: absolute;
   font-size: 120%;
   overflow: auto;
+
 }
 .post2 {
   background: rgba(255,255,255,0.7);
@@ -299,7 +300,7 @@ h6 {
 }
 
 #Portfolio{
-  padding-top: 0%; 
+
 }
 
 
@@ -459,10 +460,14 @@ h6 {
   }
   .nav_links {
     padding: 0px 0px;
-    font-size: 70%;
+    font-size: 60%;
   }
   .links {
-    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .links:hover {
+    padding-bottom: 10px;
   }
   .content{
     padding-top: 40%;
@@ -473,7 +478,7 @@ h6 {
   }
 
   .no_links li {
-    padding: 5%;
+    padding: 1%;
     text-align: center;
   }
   .first-int h1 {
@@ -483,13 +488,19 @@ h6 {
   color: black;
   text-align: center;
   }
+  .first {
+    height: 110%
+  }
+  .encapsulate {
+  height: 140%;
+}
   .prof-pic {
     border-radius: 0%;
-    height: 150px;
-    width: 100px;
+    height: 200px;
+    width: 150px;
   }
   .temp {
-    margin-top: 30%;
+    margin-top: 10%;
   }
   .prof-pic2 {
   float: none;
@@ -501,12 +512,14 @@ h6 {
     padding-top: 195%;
   }
   h4 {
+    padding-top: 25%;
     font-size: 170%;
   }
   #About-int{
   height: 25%; 
   }
   h6 {
+    padding-top: 15%;
     font-size: 170%;
   }
   .post2 {
@@ -516,4 +529,3 @@ h6 {
     width: 57%;
     font-size: 100%;
     overflow: auto;
-  }
