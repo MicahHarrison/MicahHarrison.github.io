@@ -141,9 +141,8 @@ body {
 }
 
 .email{
-  color: white;
-  padding: 1%;
   font-size: 56%;
+  color: #f7fcf3;
   font-family: 'Roboto Condensed', sans-serif;
 }
 .first-int {
